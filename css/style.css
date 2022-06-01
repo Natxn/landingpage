@@ -14,6 +14,11 @@ ul li a{
     text-decoration: none;
 }
 
+div img{
+    display: block;
+    width: 100%;
+}
+
 .flex-container{
     display: flex;
     max-width: 992px;
@@ -77,4 +82,67 @@ header .menu{
 
 #who-we-are{
     flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#who-we-are h2{
+    font-size: 32px;
+    color: #122a57;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#who-we-are h2::before{
+    content: "";
+    height: 50px;
+    width: 5px;
+    margin-right: 5px;
+    background-color: #122a57;
+    position: relative;
+}
+
+#who-we-are p{
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+#who-we-are img{
+    min-width: 520px;
+}
+
+.container-outer{
+    background-color: #122a57;
+    width: 100%;
+}
+
+#services{
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#services h2{
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.list-services{
+    display: flex;
+    justify-content: space-around;
+}
+
+.list-services .service-item{
+    text-align: center;
+}
+
+.service-item a{
+    width: 120px;
+    background-color: #fff;
+    border-radius: 30px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
 }
